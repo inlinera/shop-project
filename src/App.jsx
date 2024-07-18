@@ -10,7 +10,7 @@ import { Error } from './app/pages/Error';
 export const App = () => {
   const [searchQuery, setSearchQuery] = useState('');
   return (
-    <Router basename='/shop-project'>
+    <Router>
       <TheHeader setSearchQuery={setSearchQuery} />
       <Routes>
         <Route path="/products" element={<Shop searchQuery={searchQuery} />} />

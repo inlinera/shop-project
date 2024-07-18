@@ -1,5 +1,5 @@
 {
-    "rewrites": [
-      { "source": "/shop-project/:path*", "destination": "/index.html" }
+    "routes": [
+      { "src": "/(.*)", "dest": "/" }
     ]
   }
