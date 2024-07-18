@@ -1,0 +1,47 @@
+.modal {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 3;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .5s;
+}
+
+.modal.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.modal__content {
+    padding: 25px;
+    border-radius: 8px;
+    background-color: #fff;
+    transform: translateY(40px);
+    transition: all .3s;
+}
+.modal__content.active {
+    transform: translateY(0px);
+}
+
+.closeBtn {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 0;
+    right: 0;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    font-size: 25px;
+    background-color: transparent;
+    cursor: pointer;
+}

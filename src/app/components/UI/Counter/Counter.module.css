@@ -1,0 +1,21 @@
+.counter {
+    display: flex;
+    align-items: center;
+}
+.counter_btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #eeeeee;
+}
+input {
+    width: 45px;
+    padding: 5px;
+    border: 1px solid #000;
+    border-radius: 6px;
+}
+input::-webkit-outer-spin-button,
+::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

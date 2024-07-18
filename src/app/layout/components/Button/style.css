@@ -1,0 +1,14 @@
+.theBtnHeader {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    font-size: 19px;
+    border: none;
+    border-radius: 50%;
+    background-color: rgba(228, 228, 228, .9);
+    cursor: pointer;
+    transition: all .1s;
+}

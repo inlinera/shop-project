@@ -1,0 +1,7 @@
+.radio_wrapper {
+    display: flex;
+}
+
+.radio_element {
+    margin: 0 10px;
+}

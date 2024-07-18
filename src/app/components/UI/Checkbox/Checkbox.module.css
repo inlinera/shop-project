@@ -1,0 +1,7 @@
+.checkbox_wrapper {
+    display: flex;
+}
+
+.checkbox_element {
+    margin: 0 10px;
+}

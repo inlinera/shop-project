@@ -1,0 +1,91 @@
+li {
+  position: relative;
+    width: 100%;
+    margin: 15px 0;
+    padding: 15px;
+    list-style-type: none;
+    display: grid;
+    border-radius: 6px;
+    background-color: #fff;
+    .cart_info {
+      display: flex;
+      align-items: center;
+      img {
+        justify-content: start;
+      }
+    }
+    * {
+      margin: 10px;
+    }
+    p {
+      transition: all .4s;
+      cursor: pointer;
+    }
+    p:hover{
+      color: rgb(39, 137, 170);
+    }
+    .cart_state_end {
+      margin-left: auto;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      * {
+        margin: auto 10px;
+      }
+    span {
+      color: green;
+    }
+    .cartItem_btn {
+      height: 20px;
+      display: flex;
+      align-items: center;
+      border: none;
+      font-size: 20px;
+      background-color: transparent;
+      cursor: pointer;
+    }
+  }
+  }
+  
+  @media(max-width: 720px) {
+    li {
+        width: 90vw;
+        display: grid;
+        grid-template-rows: auto;
+        justify-content: center;
+        .cart_info {
+          margin: 0;
+          display: grid;
+          grid-template-columns: 1fr 3fr;
+        img {
+          width: 21.5vw;
+          padding: 5px;
+          margin: auto 10px;
+        }
+      }
+        .cart_state_end {
+          margin: 25px auto;
+          justify-content: center;
+          font-size: 12px;
+          .cartItem_btn::after {
+            content: 'Delete';
+            font-size: 12px;
+            font-weight: 600;
+          }
+        }
+      }
+  }
+
+  @media(max-width: 420px) {
+   li {
+    font-size: 13px;
+    .cart_state_end {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      * {
+        margin: 0 5px;
+        justify-content: center;
+      }
+    }
+   }
+  }
