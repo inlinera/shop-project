@@ -4,4 +4,5 @@ import react from '@vitejs/plugin-react-swc';
 export default defineConfig({
   plugins: [react()],
   base: '/shop-project/', 
+  homepage: '/shop-project/'
 });

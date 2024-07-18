@@ -1,0 +1,5 @@
+{
+    "rewrites": [
+      { "source": "/shop-project/:path*", "destination": "/index.html" }
+    ]
+  }
