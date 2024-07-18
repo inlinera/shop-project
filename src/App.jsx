@@ -5,7 +5,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { TheHeader } from './app/layout/TheHeader';
 import { Shop } from './app/pages/Shop';
 import { Cart } from './app/pages/Cart';
-import { Error } from './app/pages/Error';
 
 export const App = () => {
   const [searchQuery, setSearchQuery] = useState('');
@@ -15,7 +14,7 @@ export const App = () => {
       <Routes>
         <Route path="/products" element={<Shop searchQuery={searchQuery} />} />
         <Route path="/cart" element={<Cart />} />
-        <Route path="/*" element={<Error />} />
+        <Route path="/*" element={<Shop searchQuery={searchQuery} />} />
       </Routes>
     </Router>
   );
