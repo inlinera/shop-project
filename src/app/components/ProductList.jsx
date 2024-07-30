@@ -3,31 +3,13 @@ import React, { useEffect, useState, useMemo } from 'react';
 import { NavSort } from './NavSort/NavSort';
 import ProductItem from './ProductItem/ProductItem';
 import MyLoader from './UI/MyLoader/MyLoader';
-// PRODUCTLIST
-import { product } from '../utils/list';
 import { FilterModal } from './AllModals/FilterModal';
 import { SortModal } from './AllModals/SortModal';
+// PRODUCTLIST
+import { product } from '../utils/list';
+import { sortByType, sortByBrands, sortByPrice } from '../data/data.sort';
 
 export const ProductList = ({ searchQuery }) => {
-  // SORT TYPE
-  const sortByType = [
-    { name: 'All Products' },
-    { name: 'Hoodies' },
-    { name: 'Jeans' },
-    { name: 'T-shirts' },
-    { name: 'Other' },
-  ];
-  // SORT BRANDS
-  const sortByBrands = [
-    { name: 'Chrome Hearts' },
-    { name: 'B.B.Simon' },
-    { name: 'sk8clothing' },
-  ];
-  // SORT PRICE
-  const sortByPrice = [
-    { name: 'Cheap ones first' },
-    { name: 'Expensive ones first' }
-  ];
   //SORT BY TYPE
   const [chosedType, setChosedType] = useState('All Products');
   const [filteredProducts, setFilteredProducts] = useState(product);
