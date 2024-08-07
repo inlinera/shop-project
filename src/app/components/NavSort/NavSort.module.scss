@@ -24,6 +24,8 @@
         text-wrap: nowrap;
         cursor: pointer;
         scroll-snap-align: center;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
         &.active {
             background: rgb(39, 137, 170);
             color: #fff;

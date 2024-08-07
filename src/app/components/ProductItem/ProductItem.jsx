@@ -53,7 +53,7 @@ const ProductItem = ({ id, image, name, price, type }) => {
     return (
         <>
         <CartItemAdd active={isModalActive} setActive={setIsModalActive} state={cartState}/>
-        <div key={name} className={cl.product} loading="lazy">
+        <div className={cl.product}>
             <div className={cl.product_image}>
                 {loading && <RoundLoader />}
                 <img 
